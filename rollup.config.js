@@ -9,7 +9,7 @@ export default {
       presets: [['env', { modules: false }], 'stage-2', 'react'],
       plugins: [
         'external-helpers',
-        ['transform-react-remove-prop-types', { mode: 'wrap' }],
+        ['transform-react-remove-prop-types', { mode: 'remove' }],
       ],
     }),
     process.env.MINIFY ? minify() : false,
